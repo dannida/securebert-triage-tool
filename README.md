@@ -39,7 +39,7 @@ python secureBERTplaybookSearch.py
 - [ ] Gradio web UI
 
 ## Contributing
-See CONTRIBUTING.md
+See <a href = https://github.com/dannida/securebert-triage-tool/blob/main/contributing>CONTRIBUTING</a>
 
 ## Security
 See <a href = "https://github.com/dannida/securebert-triage-tool/blob/main/Security">SECURITY</a>
