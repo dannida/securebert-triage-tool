@@ -38,4 +38,13 @@ python secureBERTsearchV1.py
 - [ ] Export matches + solutions as a report  
 - [ ] Gradio web UI
 
+## Contributing
+See CONTRIBUTING.md
+
+## Security
+See SECURITY.md
+
+## License
+MIT
+
 
