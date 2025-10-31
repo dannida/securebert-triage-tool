@@ -1,14 +1,59 @@
 # SecureBERT Triage Tool
 
-This project uses the SecureBERT model to identify and match new security alerts or incidents
-against a knowledge base (playbook) of past issues and solutions.
+SecureBERT-powered incident triage: paste an alert, get the top similar past incidents and their mitigations from your playbook.
+
+![status](https://img.shields.io/badge/status-active-brightgreen)
+![python](https://img.shields.io/badge/python-3.10%2B-blue)
+![license](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ## Features
-- Search alerts and return the top 3 similar past incidents.
-- Display recommended mitigations directly from the playbook.
-- CSV-based knowledge base, easily updatable by analysts.
-- Upload your own CSV-based playbook
+- ?? Semantic search over your IR / playbook entries (SecureBERT embeddings)
+- ?? Top-k matches with similarity scores
+- ?? One-key view of suggested mitigations from your playbook
+- ?? CSV knowledge base (easy to update)
 
-## Usage
+## Quick Start
 ```bash
-python secureBERTplaybookSearch.py
+# 1) Create venv (Windows PowerShell)
+python -m venv .venv
+. .\.venv\Scripts\Activate.ps1
+
+# 2) Install dependencies
+pip install -r requirements.txt
+
+# 3) Add your playbook as kb.csv with columns:
+#   id,title,details,solution
+#   (see kb_sample.csv)
+
+# 4) Run
+python secureBERTsearchV1.py
+CSV Format
+id,title,details,solution
+CVE-2021-XYZ,YAML deserialization RCE,"Unauthenticated RCE via YAML deserialization.","1) Patch lib ... 2) Disable unsafe_load ... "
+How It Works
+Tokenize with SecureBERT ? mean-pool ? L2-normalize
+
+Compute cosine similarity to rank KB entries
+
+Show top 3; user chooses a solution to view
+Roadmap
+
+ FAISS index for large KBs
+
+ Export matches + solutions as a report
+
+ Gradio web UI
+Contributing
+
+See CONTRIBUTING.md
+.
+
+Security
+
+See SECURITY.md
+.
+
+License
+
+MIT
+
