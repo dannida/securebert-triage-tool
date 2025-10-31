@@ -45,6 +45,6 @@ See CONTRIBUTING.md
 See SECURITY.md
 
 ## License
-MIT(LICENCE.md)
+MIT (LICENCE.md)
 
 
