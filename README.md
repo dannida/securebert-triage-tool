@@ -7,6 +7,7 @@ against a knowledge base (playbook) of past issues and solutions.
 - Search alerts and return the top 3 similar past incidents.
 - Display recommended mitigations directly from the playbook.
 - CSV-based knowledge base, easily updatable by analysts.
+- Upload your own CSV-based playbook
 
 ## Usage
 ```bash
