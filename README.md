@@ -25,8 +25,23 @@ SecureBERT-powered incident triage: paste an alert, get the top similar past inc
 - [ ] Export matches + solutions as a report  
 - [ ] Gradio web UI
 
+<<<<<<< HEAD
+## Contributing
+See [CONTRIBUTING.md].
+=======
+<<<<<<< HEAD
+# 4) Run
+python secureBERTplaybookSearch.py
+CSV Format
+id,title,details,solution
+CVE-2021-XYZ,YAML deserialization RCE,"Unauthenticated RCE via YAML deserialization.","1) Patch lib ... 2) Disable unsafe_load ... "
+How It Works
+Tokenize with SecureBERT ? mean-pool ? L2-normalize
+=======
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+>>>>>>> bdb433c (Fix Markdown formatting in README)
+>>>>>>> 5f867c1
 
 ## Security
 See [SECURITY.md](SECURITY.md).
