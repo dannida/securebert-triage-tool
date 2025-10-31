@@ -26,7 +26,7 @@ pip install -r requirements.txt
 #   (see kb_sample.csv)
 
 # 4) Run
-python secureBERTsearchV1.py
+python secureBERTplaybookSearch.py
 ```
 ## How It Works
 - Tokenize with SecureBERT ? mean-pool ? L2-normalize  
