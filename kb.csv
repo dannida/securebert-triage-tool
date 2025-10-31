@@ -1,0 +1,7 @@
+id,title,details,solution
+CVE-2021-XYZ,YAML deserialization RCE,YAML deserialization on admin endpoint enables unauthenticated remote code execution.,1) Patch YAML lib to version X.Y.Z\n2) Disable unsafe_load()\n3) Add input validation and WAF rule.
+INC-1001,Verbose error exposure,"Application leaks stack traces, framework versions revealed in errors.",1) Disable debug mode in prod\n2) Configure error handler to generic messages\n3) Log stack traces server-side only.
+INC-1010,TLS misconfiguration,Internal API lacks TLS; risk of MITM.,1) Enforce TLS 1.2+\n2) Issue certs via ACME\n3) Set HSTS and pinning
+INC-2020,SQL injection on /login,Detected ' OR 1=1 -- payload; WAF blocked attempts.,1) Parameterise queries\n2) Add input validation\n3) Expand WAF rule and add IDS alert
+INC-3300,Prototype pollution chain,Prototype pollution in JSON parser; potential path to RCE via gadget chain.,1) Patch parser lib\n2) Freeze object prototypes\n3) Add SAST rule for dangerous merges
+INC-4400,Directory traversal,Reads /etc/passwd via crafted path; inadequate sanitisation.,1) Canonicalise paths\n2) Block ../ sequences\n3) Add allowlist for served files
