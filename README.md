@@ -13,7 +13,17 @@ SecureBERT-powered incident triage: paste an alert, get the top similar past inc
 - ?? CSV knowledge base (easy to update)
 
 ## Quick Start
-**Windows PowerShell**
+```bash
+# 1) Create venv (Windows PowerShell)
+python -m venv .venv
+. .\.venv\Scripts\Activate.ps1
+
+# 2) Install dependencies
+pip install -r requirements.txt
+
+# 3) Add your playbook as kb.csv with columns:
+#   id,title,details,solution
+#   (see kb_sample.csv)
 
 ## How It Works
 - Tokenize with SecureBERT ? mean-pool ? L2-normalize  
