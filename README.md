@@ -10,4 +10,4 @@ against a knowledge base (playbook) of past issues and solutions.
 
 ## Usage
 ```bash
-python secureBERTsearchV1.py
+python secureBERTplaybookSearch.py
