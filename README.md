@@ -13,18 +13,19 @@ SecureBERT-powered incident triage: paste an alert, get the top similar past inc
 - ?? CSV knowledge base (easy to update)
 
 ## Quick Start
-```bash
-# 1) Create venv (Windows PowerShell)
-python -m venv .venv
-. .\.venv\Scripts\Activate.ps1
+**Windows PowerShell**
 
-# 2) Install dependencies
-pip install -r requirements.txt
+## How It Works
+- Tokenize with SecureBERT ? mean-pool ? L2-normalize  
+- Compute cosine similarity to rank KB entries  
+- Show top 3; user chooses a solution to view
 
-# 3) Add your playbook as kb.csv with columns:
-#   id,title,details,solution
-#   (see kb_sample.csv)
+## Roadmap
+- [ ] FAISS index for large KBs  
+- [ ] Export matches + solutions as a report  
+- [ ] Gradio web UI
 
+<<<<<<< HEAD
 # 4) Run
 python secureBERTplaybookSearch.py
 CSV Format
@@ -32,28 +33,13 @@ id,title,details,solution
 CVE-2021-XYZ,YAML deserialization RCE,"Unauthenticated RCE via YAML deserialization.","1) Patch lib ... 2) Disable unsafe_load ... "
 How It Works
 Tokenize with SecureBERT ? mean-pool ? L2-normalize
+=======
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+>>>>>>> bdb433c (Fix Markdown formatting in README)
 
-Compute cosine similarity to rank KB entries
+## Security
+See [SECURITY.md](SECURITY.md).
 
-Show top 3; user chooses a solution to view
-Roadmap
-
- FAISS index for large KBs
-
- Export matches + solutions as a report
-
- Gradio web UI
-Contributing
-
-See CONTRIBUTING.md
-.
-
-Security
-
-See SECURITY.md
-.
-
-License
-
-MIT
-
+## License
+[MIT](LICENSE)
