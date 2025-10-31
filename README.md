@@ -32,11 +32,7 @@ See [CONTRIBUTING.md].
 <<<<<<< HEAD
 # 4) Run
 python secureBERTplaybookSearch.py
-CSV Format
-id,title,details,solution
-CVE-2021-XYZ,YAML deserialization RCE,"Unauthenticated RCE via YAML deserialization.","1) Patch lib ... 2) Disable unsafe_load ... "
-How It Works
-Tokenize with SecureBERT ? mean-pool ? L2-normalize
+
 =======
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md).
