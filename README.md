@@ -28,3 +28,24 @@ pip install -r requirements.txt
 
 # 4) Run
 python secureBERTsearchV1.py
+```
+
+## How It Works
+- Tokenize with SecureBERT → mean-pool → L2-normalize  
+- Compute cosine similarity to rank KB entries  
+- Show top 3; user chooses a solution to view
+
+## Roadmap
+- [ ] FAISS index for large KBs  
+- [ ] Export matches + solutions as a report  
+- [ ] Gradio web UI
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Security
+See [SECURITY.md](SECURITY.md).
+
+## License
+[MIT](LICENSE)
+'@ | Set-Content README.md
