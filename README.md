@@ -42,7 +42,7 @@ python secureBERTplaybookSearch.py
 See CONTRIBUTING.md
 
 ## Security
-See SECURITY.md
+See <a href = "https://github.com/dannida/securebert-triage-tool/blob/main/Security">SECURITY</a>
 
 ## License
 <a href = "https://github.com/dannida/securebert-triage-tool/blob/main/LICENSE"> MIT </a>
