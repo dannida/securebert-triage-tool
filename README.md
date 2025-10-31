@@ -26,7 +26,7 @@ pip install -r requirements.txt
 #   (see kb_sample.csv)
 
 # 4) Run
-python secureBERTsearchV1.py
+python secureBERTplaybookSearch.py
 CSV Format
 id,title,details,solution
 CVE-2021-XYZ,YAML deserialization RCE,"Unauthenticated RCE via YAML deserialization.","1) Patch lib ... 2) Disable unsafe_load ... "
