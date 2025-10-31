@@ -25,19 +25,8 @@ SecureBERT-powered incident triage: paste an alert, get the top similar past inc
 - [ ] Export matches + solutions as a report  
 - [ ] Gradio web UI
 
-<<<<<<< HEAD
-## Contributing
-See [CONTRIBUTING.md].
-=======
-<<<<<<< HEAD
 # 4) Run
 python secureBERTplaybookSearch.py
-
-=======
-## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md).
->>>>>>> bdb433c (Fix Markdown formatting in README)
->>>>>>> 5f867c1
 
 ## Security
 See [SECURITY.md](SECURITY.md).
