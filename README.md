@@ -1,4 +1,3 @@
-@'
 # SecureBERT Triage Tool
 
 SecureBERT-powered incident triage: paste an alert, get the top similar past incidents and their mitigations from your playbook.
@@ -48,4 +47,3 @@ See [SECURITY.md](SECURITY.md).
 
 ## License
 [MIT](LICENSE)
-'@ | Set-Content README.md
