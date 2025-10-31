@@ -13,7 +13,6 @@ SecureBERT-powered incident triage: paste an alert, get the top similar past inc
 - ?? CSV knowledge base (easy to update)
 
 ## Quick Start
-```bash
 # 1) Create venv (Windows PowerShell)
 python -m venv .venv
 . .\.venv\Scripts\Activate.ps1
@@ -43,3 +42,4 @@ See [SECURITY.md](SECURITY.md).
 
 ## License
 [MIT](LICENSE)
+
