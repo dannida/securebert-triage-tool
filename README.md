@@ -45,6 +45,6 @@ See CONTRIBUTING.md
 See SECURITY.md
 
 ## License
-MIT (LICENCE.md)
+MIT (https://github.com/dannida/securebert-triage-tool/blob/main/LICENSE)
 
 
